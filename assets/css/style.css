@@ -221,6 +221,13 @@
         text-align: end;
         margin-inline-end: -1rem;
 
+        @supports not (anchor-name: --navigation) {
+          top: 0;
+          right: 0;
+          bottom: 0;
+          margin-inline-end: 0;
+        }
+
         &::backdrop {
           background: var(--clr-neutral-very-dark-blue);
           opacity: 0.5;
