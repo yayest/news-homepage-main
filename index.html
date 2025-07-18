@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+  <meta name="description" content="Frontend Mentor | News homepage">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+
+  <title>Frontend Mentor | News homepage</title>
+
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <a href="/" aria-hidden="true"><img src="./assets/images/logo.svg" alt="" /></a>
+
+    <dialog class="menu-dialog" id="menu" popover>
+      <button class="menu-button-hide" type="button" popovertarget="menu" popovertargetaction="hide"
+        aria-label="Hide menu"><img src="./assets/images/icon-menu-close.svg" alt=""></button>
+      <nav>
+        <ul>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#New">New</a></li>
+          <li><a href="#Popular">Popular</a></li>
+          <li><a href="#Trending">Trending</a></li>
+          <li><a href="#Categories">Categories</a></li>
+        </ul>
+      </nav>
+    </dialog>
+
+    <button class="menu-button-show" type="button" popovertarget="menu" aria-label="Show menu"><img
+        src="./assets/images/icon-menu.svg" alt=""></button>
+  </header>
+
+  <main class="main">
+    <picture>
+      <source srcset="./assets/images/image-web-3-mobile.jpg" media="(max-width: 45em)" />
+      <img src="./assets/images/image-web-3-desktop.jpg" alt="Cubes of different colors are shown." />
+    </picture>
+    <h1>The Bright Future of Web 3.0?</h1>
+    <p>
+      We dive into the next evolution of the web that claims to put the power
+      of the platforms back into the hands of the people. But is it really
+      fulfilling its promise? <a href="/">Read more</a>
+    </p>
+  </main>
+
+  <section class="new" aria-label="News">
+    <h2>New</h2>
+    <article>
+      <a href="/">Hydrogen VS Electric Cars</a>
+      <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+    </article>
+    <article>
+      <a href="/">The Downsides of AI Artistry</a>
+      <p>
+        What are the possible adverse effects of on-demand AI image
+        generation?
+      </p>
+    </article>
+    <article>
+      <a href="/">Is VC Funding Drying Up?</a>
+      <p>
+        Private funding by VC firms is down 50% YOY. We take a look at what
+        that means.
+      </p>
+    </article>
+  </section>
+
+  <section class="article" aria-label="Articles">
+    <article>
+      <img src="./assets/images/image-retro-pcs.jpg" alt="A retro computer is depicted" />
+      <a href="/"> Reviving Retro PCs </a>
+      <p>What happens when old PCs are given modern upgrades?</p>
+    </article>
+    <article>
+      <img src="./assets/images/image-top-laptops.jpg" alt="The keys are shown" />
+      <a href="/"> Top 10 Laptops of 2022 </a>
+      <p>Our best picks for various needs and budgets.</p>
+    </article>
+    <article>
+      <img src="./assets/images/image-gaming-growth.jpg" alt="The joystick is shown" />
+      <a href="/"> Growth of Gaming </a>
+      <p>The How the pandemic has sparked fresh opportunities.</p>
+    </article>
+  </section>
+
+  <footer class="attribution">
+    <p>Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+        href="https://github.com/yayest">yayest</a>.
+    </p>
+  </footer>
+</body>
+
+</html>
